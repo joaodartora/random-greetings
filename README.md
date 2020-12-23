@@ -16,6 +16,7 @@ Fortemente inspirados na ideia trazida pela conta de Twitter [Nomes de Garçom](
 - Para contribuir com o projeto basta fazer um fork, realizar as alterações e abrir um pull request (PR) para a branch ***main*** do repositório.
     - O ***pull request*** deve conter uma descrição simples do que está sendo alterado.
     - Todos os commits devem seguir o padrão de [commits semânticos](https://medium.com/@joao.dartora/tudo-o-que-voce-precisa-saber-sobre-commits-semanticos-1cd17d099fd0).
+    - Todo o código novo deverá seguir boas práticas de desenvolvimento de código / clean code e ser coberto por testes unitários (e de contrato, quando for o caso)
 
 ## Como rodar local
 
