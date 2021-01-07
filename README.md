@@ -27,4 +27,5 @@ Fortemente inspirados na ideia trazida pela conta de Twitter [Nomes de Garçom](
 ## Melhorias
 
 - Expandir a lista de saudações possíveis para conter adjetivos.
+- Retornar JSON paginado com a lista da CBO
 
