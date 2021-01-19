@@ -23,6 +23,7 @@ Fortemente inspirados na ideia trazida pela conta de Twitter [Nomes de Garçom](
 - Você precisará ter a engine Docker instalada.
 - Na pasta do projeto, execute o comando ```docker build -t random-greetings .``` para buildar a imagem Docker.
 - Para rodar o projeto dentro do container execute o comando ```docker run -d -p 8080:8080 --name random-greetings random-greetings```.
+- Após isso, o endpoint ```http://localhost:8080/random-greeting``` estará disponível para receber uma requisição do tipo GET
 
 ## Melhorias
 
