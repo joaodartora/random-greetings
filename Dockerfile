@@ -17,6 +17,9 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en  
 ENV LC_ALL en_US.UTF-8
 
+# Expose on Flask default port, use only for local tests
+# EXPOSE 5000
+
 COPY . /app
 WORKDIR /app
 
