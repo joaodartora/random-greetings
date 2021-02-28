@@ -2,8 +2,9 @@ import flask
 import os
 import csv
 import random
-import datetime
 import json
+import datetime
+from pytz import timezone
 from flask import Flask
 
 app = Flask(__name__)
@@ -35,9 +36,10 @@ termos = buscar_termos_validos(arquivo_csv)
 @app.route("/random-greeting")
 def buscar_saudacao_aleatoria():    
     numero_randomico = random.randint(1, len(termos))
-    hora_atual = datetime.datetime.now().hour
+    hora_atual = datetime.datetime.now().astimezone(timezone('America/Sao_Paulo')).hour
     cumprimento = definir_saudacao(hora_atual) + ", meu " + termos[numero_randomico]
     return montar_response(cumprimento)
 
 if __name__=='__main__':
-    app.run(debug=True, port=8080, host='0.0.0.0')
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)

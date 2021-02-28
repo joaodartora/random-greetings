@@ -18,15 +18,23 @@ Fortemente inspirados na ideia trazida pela conta de Twitter [Nomes de Garçom](
     - Todos os commits devem seguir o padrão de [commits semânticos](https://medium.com/@joao.dartora/tudo-o-que-voce-precisa-saber-sobre-commits-semanticos-1cd17d099fd0).
     - Todo o código novo deverá seguir boas práticas de desenvolvimento de código / clean code e ser coberto por testes unitários (e de contrato, quando for o caso)
 
+## Acessando o server no Heroku
+
+- O endereço da aplicação no servidor gratuito Heroku é: ```https://randomgreetings.herokuapp.com/random-greeting```
+- Para acessar o conteúdo da API, basta fazer uma requisição GET para o endereço acima. Exemplo: ```curl --location --request GET 'https://randomgreetings.herokuapp.com/random-greeting'```
+- Como o Heroku é um servidor gratuito, suas máquinas ficam down quando não estão sendo utilizadas, então numa primeira requisição pode haver um tempo de resposta maior (de 15 a 20 segundos) pois a máquina estará subindo.
+
 ## Como rodar local
 
 - Você precisará ter a engine Docker instalada.
+- Remova o comentário do EXPOSE no Dockerfile para pode expor a port do server.
 - Na pasta do projeto, execute o comando ```docker build -t random-greetings .``` para buildar a imagem Docker.
-- Para rodar o projeto dentro do container execute o comando ```docker run -d -p 8080:8080 --name random-greetings random-greetings```.
-- Após isso, o endpoint ```http://localhost:8080/random-greeting``` estará disponível para receber uma requisição do tipo GET
+- Para rodar o projeto dentro do container execute o comando ```docker run -d -p 5000:5000 --name random-greetings random-greetings```.
+- Após isso, o endpoint ```http://localhost:5000/random-greeting``` estará disponível para receber uma requisição do tipo GET
 
 ## Melhorias
 
+- Adicionar um página HTML de boas-vindas no endpoint root do serviço.
 - Expandir a lista de saudações possíveis para conter adjetivos.
-- Retornar JSON paginado com a lista da CBO
-
+- Retornar JSON paginado com a lista da CBO.
+- Retornar um base64 em WordArt.
