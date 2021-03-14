@@ -34,6 +34,8 @@ Fortemente inspirados na ideia trazida pela conta de Twitter [Nomes de Garçom](
 
 ## Melhorias
 
+- Utilizar imagem nativa Python
+- Instalar dependências com requirements
 - Adicionar um página HTML de boas-vindas no endpoint root do serviço.
 - Expandir a lista de saudações possíveis para conter adjetivos.
 - Retornar JSON paginado com a lista da CBO.
