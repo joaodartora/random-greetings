@@ -40,3 +40,4 @@ Fortemente inspirados na ideia trazida pela conta de Twitter [Nomes de Garçom](
 - Expandir a lista de saudações possíveis para conter adjetivos.
 - Retornar JSON paginado com a lista da CBO.
 - Retornar um base64 em WordArt.
+- Adicionar prefixo "Desce mais uma, meu"
