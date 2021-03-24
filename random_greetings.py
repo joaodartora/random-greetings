@@ -21,10 +21,10 @@ def buscar_termos_validos(arquivo_csv):
     return termos
 
 def definir_saudacao(hora_atual):
-    if (hora_atual >= 0 and hora_atual < 6): return "Boa madrugada"
-    elif (hora_atual >= 6 and hora_atual < 12): return "Bom dia"
-    elif (hora_atual >= 12 and hora_atual < 18): return "Boa tarde"
-    else: return "Boa noite"
+    if hora_atual < 6: return "Boa madrugada"
+    elif hora_atual < 12: return "Bom dia"
+    elif hora_atual < 18: return "Boa tarde"
+    return "Boa noite"
 
 def montar_response(cumprimento):
     response = {"cumprimento": cumprimento}
