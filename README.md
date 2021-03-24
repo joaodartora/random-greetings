@@ -41,3 +41,4 @@ Fortemente inspirados na ideia trazida pela conta de Twitter [Nomes de Garçom](
 - Retornar JSON paginado com a lista da CBO.
 - Retornar um base64 em WordArt.
 - Adicionar prefixo "Desce mais uma, meu"
+- Criar bot pra integrar com o Twitter
